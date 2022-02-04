@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Jorge">
+      <meta name="keywoards" content="champions , noticias">
+      <meta name="description" content="Noticias actuales sobre la Champions leagu , alineaciones , resultados, conferencias de prensa">
+      <title>Mi sitio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" 
+         type="image/png" 
+         href="../imagenes/favicon.png">
+      <style >
+         body{font-family: arial,sans-serif;font-size: 16px;}
+         h2,h3,h4,h5,h6,p{font-family: serif;}
+         table, td, th {border:1px solid silver; border-collapse:collapse; padding:10px; text-align:center;}
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1 ><a href="../index.html" title="Jugador12">Jugador12</a></h1>
+      </header>
+      <nav class="menu">
+         <ul>
+            <li class="seleccionado"><a href="../index.html">Inicio</a></li>
+            <li><a href="../seccion1/index.html">Seccion1</a></li>
+            <li><a href="../seccion2/index.html">Seccion2</a></li>
+            <li><a href="../seccion3/index.html">Seccion3</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="../seccion4/PagDondeEstamos.html">Gazprom arena</a></li>
+         </ul>
+      </nav>
+      <main>
+         <section>
+            <h2>¿Quiere trabajar con nosotros? Envie sus Datos y nos pondremos en contacto  cuanto antes.</h2>
+            <article>
+               <form action="contacto.php" method="post" enctype="multipart/form-data">
+                  Nombre <br>
+                  <input type="text" name="nombre" value="" size="20" maxlength="30">
+                  <br>
+                  Apellidos <br>
+                  <input type="text" name="apellidos" value="" size="50" maxlength="80">
+                  <br>
+                  Correo Electrónico <br>
+                  <input type="email" name="email" value="" maxlength="10">
+                  <br>
+                  Sexo <br>
+                  <input type="radio" name="sexo" value="hombre" checked="checked"> Hombre <br>
+                  <input type="radio" name="sexo" value="mujer"> Mujer
+                  <br><br>
+                  Incluir  foto <input type="file" name="foto">
+                  <br><br>
+                  <input name="suscribir" type="checkbox" value="suscribir" checked="checked"> Suscribirme al boletín de novedades
+                  <br><br>
+                  <input type="submit" name="enviar" value="Guardar cambios">
+                  <input type="reset" name="limpiar" value="Borrar los datos introducidos">
+               </form>
+            </article>
+         </section>
+      </main>
+      <footer>
+         <p >&copy; <time datetime="2022-02-02T13:53">02-02-2022</time></p>
+      </footer>
+   </body>
+</html>
